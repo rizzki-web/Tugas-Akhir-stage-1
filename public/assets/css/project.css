@@ -1,0 +1,241 @@
+/* DAY 3*/
+
+/* Tag Selector*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(215, 219, 219, 0.842);
+    height: 93vh;
+}
+
+nav {
+display: flex;
+padding: 0 90px;
+background-color: rgb(245, 243, 243);
+height: 7vh;
+}
+
+nav ul {
+list-style-type: none;
+margin-top: 10px;
+}
+
+nav ul li {
+display: inline;
+margin-right: 30px;
+}
+
+nav ul li a {
+color: black;
+text-decoration: none;
+}
+
+nav div {
+display: flex;
+}
+
+/*Class Selector*/
+
+nav .left-side {
+flex: 50%;
+display: flex;
+align-items: center;
+margin-top: 5px;
+}
+
+nav .right-side {
+flex: 50%;
+justify-content: flex-end;
+align-items: center;
+
+}
+
+nav .right-side a {
+color: white;
+text-decoration: none;
+background-color: black;
+padding: 5px 15px;
+border-radius: 5px;
+}
+
+  /* Day 4 */
+/* My Project */
+
+.container-form {
+    height: max-content;
+}
+
+.container-form .form {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+
+
+}
+
+.container-form .form h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.container-form .form form div {
+margin-top: 8px;
+}
+
+.container-form .form form input {
+box-shadow: 3px 3px 3px rgba(172, 168, 168, 0.795);
+border: 1px solid rgba(189, 181, 181, 0.795);
+border-radius: 5px;
+padding: 5px;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+
+.container-form .form form textarea {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(172, 168, 168, 0.795);
+    border: 1px solid rgba(189, 181, 181, 0.795);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 100px;
+    resize: none;
+}
+
+.checkbox {
+    width: 100%;
+}
+
+.top-checkbox {
+    display: flex;
+}
+
+.bottom-checkbox {
+    display: flex;
+}
+
+.form-check {
+    margin-right: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666363;
+}
+
+form .btn {
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    background: #050505;
+    padding: 5px 20px 4px 20px;
+    text-decoration: none;
+    border: none;
+    margin-top: 20px;
+    float: right;
+}
+
+form .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.kolom-date {
+    display: flex;    
+}
+
+.start-date {
+    flex: 1;   
+}
+
+.start-date input {
+    width: 95%;
+}
+
+.end-date {
+    flex: 1;
+}
+
+.end-date input {
+    width: 100%;
+}
+
+.input-file {
+background-color: white;
+box-shadow: 3px 3px 3px rgba(172, 168, 168, 0.795);
+border: 1px solid rgba(189, 181, 181, 0.795);
+border-radius: 5px;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+
+/* CARD */
+
+.container-card {
+    width: 100%;
+    height: max-content;
+    background-color: #fff;
+    margin-top: 150px;
+}
+
+.card-card {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 120px;
+}
+
+.card {
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(172, 168, 168, 0.795);
+}
+
+.card .card-icon {
+    font-size: 20px;
+    font-weight: 1000;
+    word-spacing: 20px;
+    margin-bottom: 20px;
+}
+
+.card .card-button {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card .btn {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 2px 25px;
+    border-radius: 5px;
+}
+
+.card-button .btn-left {
+    width: 90%;
+    flex: 1;
+    margin-right: 2px;
+}
+
+.card-button .btn-right {
+    width: 100%;
+    flex: 1;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+/* DAY 3*/
+
+/* Tag Selector*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(215, 219, 219, 0.842);
+    height: 93vh;
+}
+
+nav {
+display: flex;
+padding: 0 90px;
+background-color: rgb(245, 243, 243);
+height: 7vh;
+}
+
+nav ul {
+list-style-type: none;
+margin-top: 10px;
+}
+
+nav ul li {
+display: inline;
+margin-right: 30px;
+}
+
+nav ul li a {
+color: black;
+text-decoration: none;
+}
+
+nav div {
+display: flex;
+}
+
+/*Class Selector*/
+
+nav .left-side {
+flex: 50%;
+display: flex;
+align-items: center;
+margin-top: 5px;
+}
+
+nav .right-side {
+flex: 50%;
+justify-content: flex-end;
+align-items: center;
+
+}
+
+nav .right-side a {
+color: white;
+text-decoration: none;
+background-color: black;
+padding: 5px 15px;
+border-radius: 5px;
+}
+
+/* Minggu 2 Day 1 Detail Project */
+
+.container-detail {
+    width: 90%;
+    margin: auto;
+    
+}
+
+.container-detail .title {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.detail-atas {
+    flex: 40;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    height: max-content;
+}
+
+.image {
+    flex: 60;
+}
+
+.image img {
+    width: 80%;
+    height: 300px;
+}
+
+.date-detail .kalendar {
+    display: flex;
+}
+
+.date-detail .durasi {
+    display: flex;
+
+}
+
+.date-icon {
+    flex: 40;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-icon {
+    display: flex;
+}
+
+.bottom-icon {
+    display: flex;
+}
+
+
+
+.detail-bawah {
+    flex: 60;
+    text-align: justify;
+}

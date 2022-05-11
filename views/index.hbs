@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+<body>
+
+    <nav>
+
+        <div class="left-side">
+            <a href="/" style="font-weight: 700;"><img src="../public/assets/image/logo.png" alt=""></a>
+
+            <ul>
+                <li><a href="/" style="font-weight: 700;">Home</a></li>
+                {{#if isLogin}}
+                <li><a href="/add-project">Add Project</a></li>
+                {{/if}}
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            
+            {{#if isLogin}}
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Heloo, {{user.name}}</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/logout">Logout</a>
+                </li>
+              </ul>
+
+            {{else}}
+                <div class="right-side">
+                    <a href="/register" style="color:black; text-decoration: none; margin-right: 20px;">Register</a>
+                    <a href="/login" style="color:black; text-decoration: none; margin-right: 20px;">Login</a>
+            {{/if}}
+
+
+        <a href="/contact" style="
+        color: white;
+        text-decoration: none;
+        background-color: black;
+        padding: 5px 15px;
+        border-radius: 5px;">Contact Me</a>
+    </div>
+    </nav>
+
+    <div class="container-main">
+        <div class="card">
+            <div class="left-side">
+                        <h2>Hi Welcome to my hut</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quae repellat tempora nemo repudiandae quasi eaque autem expedita consectetur non optio,
+                            porro molestias voluptas saepe natus illum ratione fugit ipsa doloribus.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, consectetur dolorum 
+                            mollitia earum ratione reprehenderit, ducimus quo blanditiis rerum, magnam repellendus provident 
+                            harum architecto veritatis quia voluptatem et eos quas!</p>
+        
+                            <div class="contact">
+                                <a href="/contact" class="btn">contact</a>
+                                <a href="#" class="cv"> download CV <i class="download fa-solid fa-download"></i></a>
+                            </div>
+        
+                            <div class="icon">
+                                <a href="#" class="fa-brands fa-linkedin" ></a>
+                                <a href="#" class="fa-brands fa-instagram-square" ></a>
+                                <a href="#" class="fa-brands fa-facebook-f" ></a>
+                                <a href="#" class="fa-brands fa-twitter-square" ></a>
+                            </div>
+            </div>
+
+                    <div class="right-side">
+                        <div class="image">
+                            <img src="../public/assets/image/profil.jpg" alt="profil">
+                            <p style="font-weight: 800; font-size: 14px;">Muhammad Rizzki</p>
+                            <p style="font-size: 14px;">Junior Fullstack Programmer</p>
+                        </div>
+                    </div>   
+        </div>
+    </div>
+
+     <div class="container-card">
+        
+            <div style="height: 100px;">
+                <h1 style="
+                font-weight: 800; 
+                padding-top: 100px; 
+                text-align: center;">
+                MY PROJECT</h1>
+            </div>
+
+            
+            <div id="kartu"  class="card-card">
+
+                    {{#each projects}}
+                    <div class="card" style="width: 18rem; border: solid 1px rgb(219, 214, 214);">
+                        <img src="../public/assets/image/detail.jpg" class="card-img-top" alt="..." style="
+                            height: 250px;
+                            width: 95%; 
+                            border: 8px solid white;
+                            border-radius: 20px;">
+                        <div class="card-body">
+                            <a href="/project-detail/{{this.id}}" class="card-title" style="font-size: 18px; font-weight: 700;">{{this.title}}</a>
+                            <p style="color: gray;">{{this.duration}}</p>
+                            <p class="card-text" id="content">{{this.description}}</p>
+                            <div class="card-icon">
+                                {{#each technologies}}
+                                <i class="fa-brands fa-{{this}}"></i>
+                                {{/each}}
+                            </div>
+
+                            {{#if isLogin}}
+                            <div class="card-button" style="text-align: center;">
+                            <a href="/edit-project/{{this.id}}" class="btn btn-left">Edit</a>
+                            <a href="/delete-project/{{this.id}}" class="btn btn-right">Delete</a>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>  
+                   {{/each}}
+            </div>
+            
+    </div>
+
+    <script src="public/assets/js/index.js"></script>  
+</body>
+</html>

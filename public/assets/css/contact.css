@@ -1,0 +1,149 @@
+/* DAY 3*/
+
+/* Tag Selector*/
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  padding: 0 90px;
+  background-color: rgb(245, 243, 243);
+  height: 7vh;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav div {
+  display: flex;
+}
+
+/*Class Selector*/
+
+nav .left-side {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+}
+
+nav .right-side {
+  flex: 50%;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+/*nav .right-side a {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+
+
+/* DAY 2 */
+
+/* TAG selector */
+
+body {
+  background-color:  rgba(188, 199, 199, 0.842);
+}
+
+/* Class selector*/
+
+.btn {
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    background: #050505;
+    padding: 5px 20px 4px 20px;
+    text-decoration: none;
+    border: none;
+    margin-top: 20px;
+    float: right;
+  }
+  
+.btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+.main-container {
+    height: 93vh;
+    width: 100%;
+  }
+
+.form-container {
+  width: 400px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-container div {
+  margin-top: 8px;
+}
+
+.form-container form label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-container form input {
+  width: 100%;
+  box-shadow: 3px 3px 20px rgba(207, 199, 199, 0.795);
+  border: 1px solid rgba(189, 181, 181, 0.795);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.form-container form select {
+  width: 103%;
+  box-shadow: 3px 3px 20px rgba(207, 199, 199, 0.795);
+  border: 1px solid rgba(189, 181, 181, 0.795);
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.form-container form textarea {
+  width: 100%;
+  box-shadow: 3px 3px 20px rgba(207, 199, 199, 0.795);
+  border: 1px solid rgba(189, 181, 181, 0.795);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 100px;
+  resize: none;
+}
